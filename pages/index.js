@@ -14,6 +14,10 @@ export default () => (
       Paquetes | Salidas Confirmadas
       <SearchBar />
     </Section>
+    <Section background='#00b0ea' dark>
+      Paquetes | Salidas Confirmadas
+      <SearchBar />
+    </Section>
     <Title text={'Mundipack'} />
     <Subtitle text={'Bienvenidos'} />
   </Layout>

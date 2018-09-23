@@ -18,7 +18,8 @@ export const SliderContainer = styled.div`
 
 export const Section = styled.div`
   text-align: center;
-  color: #00ca82;
+  color: ${props => (props.dark ? '#ff' : '#00ca82')};
+  background: ${props => props.background || '#fff'};
 `
 
 export const Select = styled.select`
