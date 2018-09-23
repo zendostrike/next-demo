@@ -16,6 +16,34 @@ export const SliderContainer = styled.div`
   padding: 0;
 `
 
+export const SlideContent = styled.div`
+  position: absolute;
+  top: 250px;
+  right: 200px;
+`
+
+export const SliderTitle = styled.h1`
+  font-size: 6em;
+  text-shadow: -1px -1px 5px rgba(51,51,51,0.89);
+  margin: 0px;
+`
+
+export const SliderSubtitle = styled.h2`
+  font-size: 3em;
+  text-shadow: -1px -1px 5px rgba(51,51,51,0.89);
+  margin: 0px;
+`
+
+export const PriceTag = styled.a`
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  border-style: none;
+  background: #00b0ea;
+  font-size: 3em;
+  padding: 15px;
+`
+
 export const Section = styled.div`
   text-align: center;
   color: ${props => (props.dark ? '#fff' : '#00ca82')};

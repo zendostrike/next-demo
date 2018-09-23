@@ -6,7 +6,7 @@ import Grid from '../components/Grid'
 import Card from '../components/Card'
 import { Section } from '../components/styles'
 
-const images = ['/static/images/slide_1.jpg']
+const images = ['/static/images/slide_1.jpg', '/static/images/slide_2.jpg']
 
 export default () => (
   <Layout>
@@ -16,10 +16,10 @@ export default () => (
       <SearchBar />
     </Section>
     <Section background='#00b0ea' dark>
-      Promociones 
+      Promociones
       <SearchBar />
     </Section>
-    <Section >
+    <Section>
       Paquetes | Salidas Confirmadas
       <SearchBar />
     </Section>
