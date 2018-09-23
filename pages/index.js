@@ -24,6 +24,8 @@ export default () => (
       <Grid>
         <Card />
         <Card />
+        <Card />
+        <Card />
       </Grid>
     </Section>
   </Layout>

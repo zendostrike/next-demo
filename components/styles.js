@@ -20,6 +20,7 @@ export const Section = styled.div`
   text-align: center;
   color: ${props => (props.dark ? '#fff' : '#00ca82')};
   background: ${props => props.background || '#fff'};
+  padding: 100px;
 `
 
 export const Select = styled.select`
@@ -69,7 +70,8 @@ export const CardFooter = styled.div`
 export const GridContainer = styled.div`
   background: red;
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 260px 260px 260px 260px;
+  justify-content: space-between;
 `
 
 export const GridItem = styled.div`
