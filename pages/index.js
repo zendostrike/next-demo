@@ -11,20 +11,21 @@ const images = ['/static/images/slide_1.jpg', '/static/images/slide_2.jpg']
 export default () => (
   <Layout>
     <Slider images={images} />
-    <Section margin-top='100px'>
-      Paquetes | Salidas Confirmadas
-      <SearchBar />
-    </Section>
-    <Section background='#00b0ea' dark>
-      Promociones
-      <SearchBar />
+    <Section background='#00b0ea' marginTop='-25px' dark>
+      <Subtitle text={'Promociones'} />
+      <Grid>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Grid>
     </Section>
     <Section>
       Paquetes | Salidas Confirmadas
       <SearchBar />
     </Section>
     <Section background='#00b0ea' dark>
-      <Subtitle text={'Promociones'} />
+      <Subtitle text={'Salidas confirmadas'} />
       <Grid>
         <Card />
         <Card />

@@ -49,20 +49,20 @@ export const Section = styled.div`
   color: ${props => (props.dark ? '#fff' : '#00ca82')};
   background: ${props => props.background || '#fff'};
   position: relative;
-  padding: ${props => (props.dark ? '1em 1em 9em' : '1em 1em 50px')};
-  margin-top: ${props => (props.dark ? '100px' : '0px')};
+  padding: 0 1em 2em;
+  margin-top: ${props => props.marginTop ||'100px'};
   ::before {
     content: ' ';
     background: ${props => (props.dark ? 'linear-gradient(to left bottom, transparent 49.5%, #00b0ea 50%);' : 'linear-gradient(to left bottom, transparent 49.5%, #fff 50%);')};
     position: absolute;
     width: 100%;
     height: 100px;
-    top: ${props => (props.dark ? '-99px' : '-99px')};
+    top: -99px;
     left: 0;
   }
   ::after {
     content: ' ';
-    background: ${props => (props.dark ? 'linear-gradient(to left bottom, #00b0ea 49.5%, transparent 50%);' : 'linear-gradient(183deg, #fff 49.5%, #F3F3F4 50%);')};
+    background: ${props => (props.dark ? 'linear-gradient(to left bottom, #00b0ea 49.5%, transparent 50%);' : 'linear-gradient(182deg, #fff 49.5%, #F3F3F4 50%);')};
     position: absolute;
     width: 100%;
     height: 100px;
@@ -119,9 +119,23 @@ export const CardFooter = styled.div`
 `
 
 export const GridContainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 260px 260px 260px 260px;
+  grid-template-columns: repeat(4, 260px);
   justify-content: space-around;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  @media (max-width: 1179px) {
+    grid-template-columns: repeat(3, 260px) ;
+  }
+  @media (max-width: 889px) {
+    grid-template-columns: repeat(2, 260px) ;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 260px) ;
+  }
 `
 
 export const GridItem = styled.div`
