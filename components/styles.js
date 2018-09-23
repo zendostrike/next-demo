@@ -12,13 +12,13 @@ export const HeaderLink = styled.a`
   color: #00ca82;
 `
 
-export const Slider = styled.div`
-  background: #00aaea;
-  height: 600px;
+export const SliderContainer = styled.div`
+  padding: 0;
 `
 
 export const Section = styled.div`
   text-align: center;
+  color: #00ca82;
 `
 
 export const Select = styled.select`

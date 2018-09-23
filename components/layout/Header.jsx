@@ -7,7 +7,23 @@ const Header = styled.header`
   grid-area: header;
 `
 
-export const HeaderLink = styled.a`
+const Nav = styled.nav`
+  display: grid;
+  grid-template-areas:
+    "left right";
+`
+
+const Left = styled.div`
+  grid-area: left;
+`
+
+const Right = styled.div`
+  grid-area: right;
+  text-align: right;
+  padding-top: 13px;
+`
+
+const A = styled.a`
   color: #00b0ea;
   padding: 10px;
   cursor: pointer;
@@ -15,16 +31,21 @@ export const HeaderLink = styled.a`
 
 export default props => (
   <Header>
-    <nav>
-      <Link href='/'>
-        <HeaderLink>Mundipack</HeaderLink>
-      </Link>
-      <Link href='/signup'>
-        <HeaderLink>Registro</HeaderLink>
-      </Link>
-      <Link href='/signin'>
-        <HeaderLink>Login</HeaderLink>
-      </Link>
-    </nav>
+    <Nav>
+      <Left>
+        <img src='/static/images/logo.png' height='45' />
+      </Left>
+      <Right>
+        <Link href='/'>
+          <A>Idioma</A>
+        </Link>
+        <Link href='/signup'>
+          <A>Registro</A>
+        </Link>
+        <Link href='/signin'>
+          <A>Login</A>
+        </Link>
+      </Right>
+    </Nav>
   </Header>
 )
