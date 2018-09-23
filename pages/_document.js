@@ -5,8 +5,7 @@ export default class MyDocument extends Document {
   static getInitialProps ({ renderPage }) {
     const sheet = new ServerStyleSheet()
     const page = renderPage(App => props =>
-      sheet.collectStyles(<App {...props} />)
-    )
+      sheet.collectStyles(<App {...props} />))
     const styleTags = sheet.getStyleElement()
     return { ...page, styleTags }
   }
@@ -18,7 +17,7 @@ export default class MyDocument extends Document {
           <title>My page</title>
           {this.props.styleTags}
         </Head>
-        <body>
+        <body style={{ margin: 0 }}>
           <Main />
           <NextScript />
         </body>
