@@ -11,11 +11,15 @@ const images = ['/static/images/slide_1.jpg']
 export default () => (
   <Layout>
     <Slider images={images} />
-    <Section>
+    <Section margin-top='100px'>
       Paquetes | Salidas Confirmadas
       <SearchBar />
     </Section>
     <Section background='#00b0ea' dark>
+      Promociones 
+      <SearchBar />
+    </Section>
+    <Section >
       Paquetes | Salidas Confirmadas
       <SearchBar />
     </Section>
