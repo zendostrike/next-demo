@@ -1,8 +1,9 @@
 import Layout from '../components/layout'
-import Title from '../components/Title'
 import Subtitle from '../components/Subtitle'
 import SearchBar from '../components/SearchBar'
 import Slider from '../components/slider'
+import Grid from '../components/Grid'
+import Card from '../components/Card'
 import { Section } from '../components/styles'
 
 const images = ['/static/images/slide_1.jpg']
@@ -18,7 +19,12 @@ export default () => (
       Paquetes | Salidas Confirmadas
       <SearchBar />
     </Section>
-    <Title text={'Mundipack'} />
-    <Subtitle text={'Bienvenidos'} />
+    <Section background='#00b0ea' dark>
+      <Subtitle text={'Promociones'} />
+      <Grid>
+        <Card />
+        <Card />
+      </Grid>
+    </Section>
   </Layout>
 )

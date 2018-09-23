@@ -5,7 +5,7 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.h2`
-  color: #00ca82;
+  color: ${props => props.color || '#fff'};
 `
 
 export const HeaderLink = styled.a`
@@ -18,7 +18,7 @@ export const SliderContainer = styled.div`
 
 export const Section = styled.div`
   text-align: center;
-  color: ${props => (props.dark ? '#ff' : '#00ca82')};
+  color: ${props => (props.dark ? '#fff' : '#00ca82')};
   background: ${props => props.background || '#fff'};
 `
 
@@ -42,4 +42,36 @@ export const Button = styled.button`
   -webkit-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
   -moz-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
   box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
+`
+export const CardContainer = styled.div`
+  max-width: 350px;
+  color: #a0a0a1;
+  font-weight: bold;
+  cursor: pointer;
+  background: #fff;
+  padding: 15px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
+  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
+`
+
+export const CardHeader = styled.div`
+
+`
+
+export const CardBody = styled.div`
+
+`
+export const CardFooter = styled.div`
+
+`
+
+export const GridContainer = styled.div`
+  background: red;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+`
+
+export const GridItem = styled.div`
+
 `
