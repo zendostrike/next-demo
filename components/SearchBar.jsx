@@ -1,11 +1,12 @@
 import Select from './Select'
 import Button from './Button'
+import { SearchBarContainer } from './styles'
 
 export default props => (
-  <div>
+  <SearchBarContainer>
     <Select />
     <Select />
     <Select />
     <Button />
-  </div>
+  </SearchBarContainer>
 )

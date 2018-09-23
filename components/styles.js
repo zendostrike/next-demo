@@ -42,6 +42,9 @@ export const Section = styled.div`
     left: 0;
   }
 `
+export const SearchBarContainer = styled.div`
+  padding: 1em 1em 50px;
+`
 
 export const Select = styled.select`
   color: #00b0ea;
@@ -88,10 +91,9 @@ export const CardFooter = styled.div`
 `
 
 export const GridContainer = styled.div`
-  background: red;
   display: grid;
   grid-template-columns: 260px 260px 260px 260px;
-  justify-content: space-between;
+  justify-content: space-around;
 `
 
 export const GridItem = styled.div`
