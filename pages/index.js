@@ -6,7 +6,7 @@ import Grid from '../components/Grid'
 import Card from '../components/Card'
 import { Section } from '../components/styles'
 
-const images = ['/static/images/slide_1.jpg', '/static/images/slide_2.jpg']
+const images = ['/static/images/slide_1.jpg', '/static/images/slide_2.png']
 
 export default () => (
   <Layout>

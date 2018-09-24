@@ -3,7 +3,7 @@ import Title from './Title'
 import Subtitle from './Subtitle'
 
 export default props => (
-  <SliderContainer>
+  <SliderContainer backgroundImage={props.images[1]}>
     <SlideContent>
       <Title text='Cancún' />
       <Subtitle text='Vía Avianca' />
@@ -12,6 +12,5 @@ export default props => (
       </div>
       <PriceTag>US$989 o S/3363</PriceTag>
     </SlideContent>
-    <img src={props.images[0]} width='100%' />
   </SliderContainer>
 )

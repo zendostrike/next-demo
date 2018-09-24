@@ -14,6 +14,10 @@ export const HeaderLink = styled.a`
 
 export const SliderContainer = styled.div`
   padding: 0;
+  height: 700px;
+  background-image: url('${props => props.backgroundImage}');
+  background-position: center top;
+  background-size: 100%;
 `
 
 export const SlideContent = styled.div`
@@ -50,7 +54,7 @@ export const Section = styled.div`
   background: ${props => props.background || '#fff'};
   position: relative;
   padding: 0 1em 2em;
-  margin-top: ${props => props.marginTop ||'100px'};
+  margin-top: ${props => props.marginTop || '100px'};
   ::before {
     content: ' ';
     background: ${props => (props.dark ? 'linear-gradient(to left bottom, transparent 49.5%, #00b0ea 50%);' : 'linear-gradient(to left bottom, transparent 49.5%, #fff 50%);')};
