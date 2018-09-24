@@ -2,15 +2,18 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 const Header = styled.header`
-  padding: 50px;
+  padding: 20px 0;
   color: #00b0ea;
   grid-area: header;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 `
 
 const Nav = styled.nav`
   display: grid;
-  grid-template-areas:
-    "left right";
+  grid-template-areas: "left right";
+  padding: 0 1em;
 `
 
 const Left = styled.div`

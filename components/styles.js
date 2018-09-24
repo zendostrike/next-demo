@@ -17,13 +17,32 @@ export const SliderContainer = styled.div`
   height: 700px;
   background-image: url('${props => props.backgroundImage}');
   background-position: center top;
-  background-size: 100%;
+  background-size: cover;
+  position: relative;
 `
 
 export const SlideContent = styled.div`
   position: absolute;
-  top: 250px;
-  right: 200px;
+  top: 2em;
+  right: 5%;
+  & span{
+    margin: 1em 0 .5em;
+    display: block;
+    color: #00b0ea;
+    font-size: 1.5em;
+    position: relative;
+    ::before{
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 85px;
+      background: #ffffff80;
+      top: 1.5em;
+      left: -.5em;
+      z-index: 0;
+      transform: rotate(-8deg);
+    }
+  }
 `
 
 export const SliderTitle = styled.h1`
@@ -37,6 +56,9 @@ export const SliderSubtitle = styled.h2`
   text-shadow: -1px -1px 5px rgba(51,51,51,0.89);
   margin: 0px;
 `
+export const SliderSpan = styled.span`
+  color: red;
+`
 
 export const PriceTag = styled.a`
   font-weight: bold;
@@ -46,6 +68,8 @@ export const PriceTag = styled.a`
   background: #00b0ea;
   font-size: 3em;
   padding: 15px;
+  display: block;    
+  position: relative;
 `
 
 export const Section = styled.div`
