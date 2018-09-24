@@ -5,7 +5,12 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.h2`
-  color: ${props => props.color || '#fff'};
+  text-align: left;
+  max-width: 1200px;
+  margin: 1em auto 2em;
+  @media (max-width: 600px) {
+    text-align: center;
+  }
 `
 
 export const HeaderLink = styled.a`
@@ -16,7 +21,7 @@ export const SliderContainer = styled.div`
   padding: 0;
   height: 700px;
   background-image: url('${props => props.backgroundImage}');
-  background-position: center top;
+  background-position: center center;
   background-size: cover;
   position: relative;
 `
@@ -56,9 +61,6 @@ export const SliderSubtitle = styled.h2`
   text-shadow: -1px -1px 5px rgba(51,51,51,0.89);
   margin: 0px;
 `
-export const SliderSpan = styled.span`
-  color: red;
-`
 
 export const PriceTag = styled.a`
   font-weight: bold;
@@ -73,6 +75,7 @@ export const PriceTag = styled.a`
 `
 
 export const Section = styled.div`
+
   text-align: center;
   color: ${props => (props.dark ? '#fff' : '#00ca82')};
   background: ${props => props.background || '#fff'};
@@ -94,8 +97,11 @@ export const Section = styled.div`
     position: absolute;
     width: 100%;
     height: 100px;
-    bottom: -100px;
+    bottom: -99px;
     left: 0;
+  }
+  & h2{
+    color: ${props => (props.dark ? '#fff' : '#00ca82')};
   }
 `
 export const SearchBarContainer = styled.div`
@@ -123,20 +129,45 @@ export const Button = styled.button`
   -moz-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
   box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
 `
+export const Card = styled.div`
+
+ 
+`
 export const CardContainer = styled.div`
   max-width: 350px;
   color: #a0a0a1;
   font-weight: bold;
   cursor: pointer;
   background: #fff;
-  padding: 15px;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
   -moz-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
   box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
+  border-radius: 3px;    
 `
 
 export const CardHeader = styled.div`
-
+  background-image: url('${props => props.backgroundImage}');
+  background-position: center top;
+  background-size: cover;
+  height: 10em;
+  border-radius: 3px 3px 0 0;
+  position: relative;  
+  ::after {  
+    content: "${props => (props.disc)}%";
+    color:#fff;
+    text-align: right;
+    background: ${props => (
+      props.disc<=10 ? 'linear-gradient(130deg,transparent 60.5%,#00C97C 61%)' :
+      props.disc<=20 ? 'linear-gradient(130deg,transparent 60.5%,#F58634 61%)' : 
+      'linear-gradient(130deg,transparent 60.5%,#ED3237 61%)'
+    )};
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    left: 0;
+    font-size: 2em;
+  }
 `
 
 export const CardBody = styled.div`
@@ -151,7 +182,7 @@ export const GridContainer = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 260px);
-  justify-content: space-around;
+  justify-content: space-between;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 
@@ -160,6 +191,7 @@ export const GridContainer = styled.div`
   }
   @media (max-width: 889px) {
     grid-template-columns: repeat(2, 260px) ;
+    justify-content: space-around;
   }
   @media (max-width: 600px) {
     grid-template-columns: repeat(1, 260px) ;

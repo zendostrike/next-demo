@@ -3,7 +3,7 @@ import Title from './Title'
 import Subtitle from './Subtitle'
 
 export default props => (
-  <SliderContainer backgroundImage={props.images[1]}>
+  <SliderContainer backgroundImage={props.images[0]}>
     <SlideContent>
       <Title text='Cancún' />
       <Subtitle text='Vía Avianca' />

@@ -7,24 +7,24 @@ import Card from '../components/Card'
 import { Section } from '../components/styles'
 
 const images = ['/static/images/slide_1.jpg', '/static/images/slide_2.png']
-
+const disc = ''
 export default () => (
   <Layout>
     <Slider images={images} />
-    <Section background='#00b0ea' marginTop='-25px' dark>
+    <Section  marginTop='-25px' color='#00ca82'>
       <Subtitle text={'Promociones'} />
       <Grid>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card disc={'10'} />
+        <Card disc={'20'}/>
+        <Card disc={'30'}/>
+        <Card disc={'20'}/>
       </Grid>
     </Section>
-    <Section>
+    <Section background='#00b0ea' dark>
       Paquetes | Salidas Confirmadas
       <SearchBar />
     </Section>
-    <Section background='#00b0ea' dark>
+    <Section color='#00ca82'>
       <Subtitle text={'Salidas confirmadas'} />
       <Grid>
         <Card />
