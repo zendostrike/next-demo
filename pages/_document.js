@@ -12,7 +12,11 @@ export default class MyDocument extends Document {
 
   render () {
     return (
-      <html>
+      <html
+        style={{
+          fontFamily: 'Avenir Next, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol'
+        }}
+      >
         <Head>
           <title>My page</title>
           {this.props.styleTags}

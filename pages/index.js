@@ -7,17 +7,17 @@ import Card from '../components/Card'
 import { Section } from '../components/styles'
 
 const images = ['/static/images/slide_1.jpg', '/static/images/slide_2.png']
-const disc = ''
+
 export default () => (
   <Layout>
-    <Slider images={images} />
-    <Section  marginTop='-25px' color='#00ca82'>
+    <Slider slides={images} />
+    <Section marginTop='-25px' color='#00ca82'>
       <Subtitle text={'Promociones'} />
       <Grid>
         <Card disc={'10'} />
-        <Card disc={'20'}/>
-        <Card disc={'30'}/>
-        <Card disc={'20'}/>
+        <Card disc={'20'} />
+        <Card disc={'30'} />
+        <Card disc={'20'} />
       </Grid>
     </Section>
     <Section background='#00b0ea' dark>

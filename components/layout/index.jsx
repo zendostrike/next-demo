@@ -15,7 +15,6 @@ const Frame = styled.div`
 const Main = styled.div`
   color: #f3f3f4;
   grid-area: main;
-  font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 `
 
 export default ({ children, title = 'This is the default title' }) => (

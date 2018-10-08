@@ -4,12 +4,9 @@ import Slide from './Slide'
 import RightButton from './RightButton'
 import LeftButton from './LeftButton'
 
-const images = ['/static/images/slide_1.jpg', '/static/images/slide_2.png']
 export default class Slider extends PureComponent {
   state = {
-    slides: images,
     currentIndex: 0,
-    autoplay: true,
     duration: 5000
   }
 
@@ -19,9 +16,14 @@ export default class Slider extends PureComponent {
     this.startInterval()
   }
 
+  componentWillUnmount () {
+    clearInterval(this.mnterval)
+  }
+
   goToNextSlide = () => {
     this.resetInterval()
-    const { slides, currentIndex } = this.state
+    const { slides } = this.props
+    const { currentIndex } = this.state
     this.setState(prevState => ({
       currentIndex: currentIndex === slides.length - 1
         ? 0
@@ -31,7 +33,8 @@ export default class Slider extends PureComponent {
 
   goToPrevSlide = () => {
     this.resetInterval()
-    const { slides, currentIndex } = this.state
+    const { slides } = this.props
+    const { currentIndex } = this.state
     this.setState(prevState => ({
       currentIndex: currentIndex === 0
         ? slides.length - 1
@@ -53,7 +56,8 @@ export default class Slider extends PureComponent {
   }
 
   renderSlides = () => {
-    const { slides, currentIndex } = this.state
+    const { slides } = this.props
+    const { currentIndex } = this.state
     return <Slide image={slides[currentIndex]} />
   }
 

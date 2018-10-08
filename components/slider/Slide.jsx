@@ -4,7 +4,6 @@ import Title from './Title'
 import Subtitle from './Subtitle'
 
 const Slide = ({ image }) => {
-  console.log(image)
   return (
     <SlideContainer backgroundImage={image}>
       <SlideContent>
