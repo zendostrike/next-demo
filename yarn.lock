@@ -8,6 +8,12 @@
   dependencies:
     "@babel/highlight" "7.0.0-beta.42"
 
+"@babel/code-frame@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
+  dependencies:
+    "@babel/highlight" "^7.0.0"
+
 "@babel/core@7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "http://registry.npmjs.org/@babel/core/-/core-7.0.0-beta.42.tgz#b3a838fddbd19663369a0b4892189fd8d3f82001"
@@ -35,6 +41,16 @@
     "@babel/types" "7.0.0-beta.42"
     jsesc "^2.5.1"
     lodash "^4.2.0"
+    source-map "^0.5.0"
+    trim-right "^1.0.1"
+
+"@babel/generator@^7.0.0":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.1.2.tgz#fde75c072575ce7abbd97322e8fef5bae67e4630"
+  dependencies:
+    "@babel/types" "^7.1.2"
+    jsesc "^2.5.1"
+    lodash "^4.17.10"
     source-map "^0.5.0"
     trim-right "^1.0.1"
 
@@ -95,11 +111,25 @@
     "@babel/template" "7.0.0-beta.42"
     "@babel/types" "7.0.0-beta.42"
 
+"@babel/helper-function-name@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-function-name/-/helper-function-name-7.1.0.tgz#a0ceb01685f73355d4360c1247f582bfafc8ff53"
+  dependencies:
+    "@babel/helper-get-function-arity" "^7.0.0"
+    "@babel/template" "^7.1.0"
+    "@babel/types" "^7.0.0"
+
 "@babel/helper-get-function-arity@7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "http://registry.npmjs.org/@babel/helper-get-function-arity/-/helper-get-function-arity-7.0.0-beta.42.tgz#ad072e32f912c033053fc80478169aeadc22191e"
   dependencies:
     "@babel/types" "7.0.0-beta.42"
+
+"@babel/helper-get-function-arity@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-get-function-arity/-/helper-get-function-arity-7.0.0.tgz#83572d4320e2a4657263734113c42868b64e49c3"
+  dependencies:
+    "@babel/types" "^7.0.0"
 
 "@babel/helper-hoist-variables@7.0.0-beta.42":
   version "7.0.0-beta.42"
@@ -174,6 +204,12 @@
   dependencies:
     "@babel/types" "7.0.0-beta.42"
 
+"@babel/helper-split-export-declaration@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.0.0.tgz#3aae285c0311c2ab095d997b8c9a94cad547d813"
+  dependencies:
+    "@babel/types" "^7.0.0"
+
 "@babel/helper-wrap-function@7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "http://registry.npmjs.org/@babel/helper-wrap-function/-/helper-wrap-function-7.0.0-beta.42.tgz#5ffc6576902aa2a10fe6666e063bd45029c36db3"
@@ -198,6 +234,18 @@
     chalk "^2.0.0"
     esutils "^2.0.2"
     js-tokens "^3.0.0"
+
+"@babel/highlight@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0.tgz#f710c38c8d458e6dd9a201afb637fcb781ce99e4"
+  dependencies:
+    chalk "^2.0.0"
+    esutils "^2.0.2"
+    js-tokens "^4.0.0"
+
+"@babel/parser@^7.0.0", "@babel/parser@^7.1.0", "@babel/parser@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.1.2.tgz#85c5c47af6d244fab77bce6b9bd830e38c978409"
 
 "@babel/plugin-proposal-async-generator-functions@7.0.0-beta.42":
   version "7.0.0-beta.42"
@@ -567,6 +615,14 @@
     babylon "7.0.0-beta.42"
     lodash "^4.2.0"
 
+"@babel/template@^7.1.0":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.1.2.tgz#090484a574fef5a2d2d7726a674eceda5c5b5644"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/parser" "^7.1.2"
+    "@babel/types" "^7.1.2"
+
 "@babel/traverse@7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "http://registry.npmjs.org/@babel/traverse/-/traverse-7.0.0-beta.42.tgz#f4bf4d1e33d41baf45205e2d0463591d57326285"
@@ -582,6 +638,20 @@
     invariant "^2.2.0"
     lodash "^4.2.0"
 
+"@babel/traverse@^7.0.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.1.0.tgz#503ec6669387efd182c3888c4eec07bcc45d91b2"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/generator" "^7.0.0"
+    "@babel/helper-function-name" "^7.1.0"
+    "@babel/helper-split-export-declaration" "^7.0.0"
+    "@babel/parser" "^7.1.0"
+    "@babel/types" "^7.0.0"
+    debug "^3.1.0"
+    globals "^11.1.0"
+    lodash "^4.17.10"
+
 "@babel/types@7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "http://registry.npmjs.org/@babel/types/-/types-7.0.0-beta.42.tgz#1e2118767684880f6963801b272fd2b3348efacc"
@@ -593,6 +663,14 @@
 "@babel/types@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0.tgz#6e191793d3c854d19c6749989e3bc55f0e962118"
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.17.10"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.1.2.tgz#183e7952cf6691628afdc2e2b90d03240bac80c0"
   dependencies:
     esutils "^2.0.2"
     lodash "^4.17.10"
@@ -808,6 +886,17 @@ babel-code-frame@^6.26.0:
 babel-core@7.0.0-bridge.0:
   version "7.0.0-bridge.0"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-7.0.0-bridge.0.tgz#95a492ddd90f9b4e9a4a1da14eb335b87b634ece"
+
+babel-eslint@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.0.1.tgz#919681dc099614cd7d31d45c8908695092a1faed"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/parser" "^7.0.0"
+    "@babel/traverse" "^7.0.0"
+    "@babel/types" "^7.0.0"
+    eslint-scope "3.7.1"
+    eslint-visitor-keys "^1.0.0"
 
 babel-loader@8.0.0-beta.3:
   version "8.0.0-beta.3"
@@ -1751,6 +1840,13 @@ eslint-plugin-standard@~4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-4.0.0.tgz#f845b45109c99cd90e77796940a344546c8f6b5c"
 
+eslint-scope@3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-3.7.1.tgz#3d63c3edfda02e06e01a452ad88caacc7cdcb6e8"
+  dependencies:
+    esrecurse "^4.1.0"
+    estraverse "^4.1.1"
+
 eslint-scope@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-4.0.0.tgz#50bf3071e9338bcdc43331794a0cb533f0136172"
@@ -2659,7 +2755,7 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
-"js-tokens@^3.0.0 || ^4.0.0":
+"js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
 
