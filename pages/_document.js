@@ -1,20 +1,22 @@
-import Document, { Head, Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+import Document, { Head, Main, NextScript } from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
-  static getInitialProps ({ renderPage }) {
-    const sheet = new ServerStyleSheet()
+  static getInitialProps({ renderPage }) {
+    const sheet = new ServerStyleSheet();
     const page = renderPage(App => props =>
-      sheet.collectStyles(<App {...props} />))
-    const styleTags = sheet.getStyleElement()
-    return { ...page, styleTags }
+      sheet.collectStyles(<App {...props} />)
+    );
+    const styleTags = sheet.getStyleElement();
+    return { ...page, styleTags };
   }
 
-  render () {
+  render() {
     return (
       <html
         style={{
-          fontFamily: 'Avenir Next, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol'
+          fontFamily:
+            "Avenir Next, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"
         }}
       >
         <Head>
@@ -26,6 +28,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </html>
-    )
+    );
   }
 }
