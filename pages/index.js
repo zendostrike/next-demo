@@ -5,9 +5,9 @@ import Slider from "../components/slider";
 import Grid from "../components/Grid";
 import Card from "../components/Card";
 import { Section } from "../components/styles";
-import { DatePicker } from "../components/atoms";
 import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
+import './react_dates_overrides.css';
 
 const images = ["/static/images/slide_1.jpg", "/static/images/slide_2.png"];
 
@@ -30,8 +30,6 @@ export default () => (
     </Section>
     <Section color="#00ca82">
       <Subtitle text={"Salidas confirmadas"} />
-      <DatePicker placeholder="Fecha" />
-
       <Grid>
         <Card />
         <Card />
