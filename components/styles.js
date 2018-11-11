@@ -6,6 +6,7 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h2`
   text-align: left;
+  font-size: 28px;
   max-width: 1200px;
   margin: 1em auto 2em;
   @media (max-width: 600px) {
@@ -135,71 +136,6 @@ export const Button = styled.button`
   -webkit-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
   -moz-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
   box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
-`;
-
-export const CardContainer = styled.div`
-  max-width: 250px;
-  font-size: 0.85em;
-  color: #a0a0a1;
-  cursor: pointer;
-  background: #fff;
-  -webkit-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
-  -moz-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
-  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
-  border-radius: 3px;
-`;
-
-export const CardHeader = styled.div`
-  background-image: url('${props => props.backgroundImage}');
-  background-position: center top;
-  background-size: cover;
-  height: 14em;
-  border-radius: 3px 3px 0 0;
-  position: relative;  
-  ::after {  
-    content: "${props => props.disc}%";
-    color:#fff;
-    text-align: right;
-    background: ${props =>
-      props.disc <= 10
-        ? "linear-gradient(130deg,transparent 60.5%,#00C97C 61%)"
-        : props.disc <= 20
-          ? "linear-gradient(130deg,transparent 60.5%,#F58634 61%)"
-          : "linear-gradient(130deg,transparent 60.5%,#ED3237 61%)"};
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    bottom: 0px;
-    left: 0;
-    font-size: 2em;
-  }
-`;
-
-export const CardBody = styled.div`
-  padding: 10px;
-  text-align: left;
-`;
-export const CardFooter = styled.div`
-  display: grid;
-  grid-template-areas: "left right";
-  padding: 10px;
-`;
-
-export const FooterLeft = styled.div`
-  grid-area: left;
-`;
-
-export const FooterRight = styled.div`
-  grid-area: right;
-`;
-
-export const CardTitle = styled.p`
-  color: #1f1f1f;
-  margin: 0;
-`;
-
-export const CardSubtitle = styled.span`
-  margin: 0;
 `;
 
 export const GridContainer = styled.div`

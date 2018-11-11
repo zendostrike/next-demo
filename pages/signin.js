@@ -1,7 +1,7 @@
-import Layout from '../components/layout'
+import DefaultTemplate from "../components/templates/default";
 
 export default () => (
-  <Layout title='Iniciar sesión'>
+  <DefaultTemplate title="Iniciar sesión">
     <div>Iniciar sesión</div>
-  </Layout>
-)
+  </DefaultTemplate>
+);

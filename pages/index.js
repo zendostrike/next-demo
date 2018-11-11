@@ -1,26 +1,33 @@
-import Layout from "../components/layout";
+import DefaultTemplate from "../components/templates/default";
 import Subtitle from "../components/Subtitle";
 import SearchBar from "../components/SearchBar";
 import Slider from "../components/slider";
 import Grid from "../components/Grid";
-import Card from "../components/Card";
+import { Card } from "../components/organisms";
 import { Section } from "../components/styles";
+
 import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
-import './react_dates_overrides.css';
+import "./react_dates_overrides.css";
 
 const images = ["/static/images/slide_1.jpg", "/static/images/slide_2.png"];
 
+const item = {
+  title: "Fiesta de solteros en Varadero",
+  subtitle: "Meliá Solo Servicios",
+  image: "/static/images/slide_1.jpg"
+};
+
 export default () => (
-  <Layout>
+  <DefaultTemplate>
     <Slider slides={images} />
     <Section marginTop="-25px" color="#00ca82">
       <Subtitle text={"Promociones"} />
       <Grid>
-        <Card disc={"10"} />
-        <Card disc={"20"} />
-        <Card disc={"30"} />
-        <Card disc={"20"} />
+        <Card item={item} />
+        <Card item={item} />
+        <Card item={item} />
+        <Card item={item} />
       </Grid>
     </Section>
 
@@ -31,11 +38,11 @@ export default () => (
     <Section color="#00ca82">
       <Subtitle text={"Salidas confirmadas"} />
       <Grid>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card item={item} />
+        <Card item={item} />
+        <Card item={item} />
+        <Card item={item} />
       </Grid>
     </Section>
-  </Layout>
+  </DefaultTemplate>
 );
