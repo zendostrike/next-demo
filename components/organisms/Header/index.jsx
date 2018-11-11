@@ -5,7 +5,7 @@ export default () => (
   <Header>
     <Nav>
       <Left>
-        <img src="/static/images/logo.png" height="45" />
+        <img src="/static/images/logo.png" height="50" alt="mundipack_logo" />
       </Left>
       <Right>
         <Link href="/">
