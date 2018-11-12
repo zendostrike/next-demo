@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   CardContainer,
   CardHeader,
@@ -6,22 +7,30 @@ import {
   CardTitle,
   CardSubtitle,
   FooterLeft,
-  FooterRight
+  FooterRight,
+  HR
 } from "./styles";
 
 export default ({ item }) => (
   <CardContainer>
-    <CardHeader backgroundImage={item.image} />
+    <Link href="/travels">
+      <CardHeader backgroundImage={item.image} />
+    </Link>
     <CardBody>
       <CardTitle>{item.title}</CardTitle>
       <CardSubtitle>{item.subtitle}</CardSubtitle>
     </CardBody>
+    <HR />
     <CardFooter>
       <FooterLeft>
         VARADERO <br />
         <span style={{ color: "#1fb8f6" }}>7 NOCHES</span>
       </FooterLeft>
-      <FooterRight>DESDE US$ 447 ó S/1,901</FooterRight>
+      <FooterRight>
+        DESDE <br />{" "}
+        <span style={{ color: "#1fb8f6", fontWeight: 600 }}>US$ 447</span> ó
+        S/1,901
+      </FooterRight>
     </CardFooter>
   </CardContainer>
 );

@@ -110,6 +110,16 @@ export const Section = styled.div`
     color: ${props => (props.dark ? "#fff" : "#00ca82")};
   }
 `;
+
+export const Section2 = styled.div`
+  text-align: center;
+  color: ${props => (props.dark ? "#fff" : "#00ca82")};
+  background: ${props => props.background || "#fff"};
+  position: relative;
+  padding: 0px 200px;
+  margin-top: ${props => props.marginTop || "100px"};
+`;
+
 export const SearchBarContainer = styled.div`
   padding: 1em 1em 50px;
   display: flex;
