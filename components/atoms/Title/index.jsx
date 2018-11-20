@@ -1,3 +1,14 @@
-import Title from "./styles";
+import Title from './styles'
 
-export default props => <Title>{props.text}</Title>;
+const TitleComponent = ({ color, text, fontSize }) => (
+  <Title color={color} fontSize={fontSize}>
+    {text}
+  </Title>
+)
+
+TitleComponent.defaultProps = {
+  color: '#00b0ea',
+  fontSize: '24'
+}
+
+export default TitleComponent

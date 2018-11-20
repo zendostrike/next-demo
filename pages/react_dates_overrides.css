@@ -4,12 +4,12 @@ Will edit everything selected including everything between a range of dates */
 .CalendarDay__selected_span {
   background: #82e0aa;
   color: white;
-  border: 1px solid red;
+  border: 1px solid #00b0ea;
 }
 
 /* Will edit selected date or the endpoints of a range of dates */
 .CalendarDay__selected {
-  background: #ff3300;
+  background: #00b0ea;
   color: white;
 }
 
@@ -26,16 +26,18 @@ is not yet selected. Edits the dates between your mouse and said date */
   background: brown;
 }
 
-.DateInput{
-  -webkit-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
-  -moz-box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
-  box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61);
+.DateInput {
+  /* box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61); */
 }
 
-.DateInput_input{
+.DateInput_input {
   font-size: 0.9em;
-  height: 33px;
+  height: 32px;
   width: 100px;
-  color: hsl(0,0%,50%);
+  color: hsl(0, 0%, 50%);
   border-style: none;
+}
+
+.SingleDatePickerInput {
+  border-radius: 0px;
 }

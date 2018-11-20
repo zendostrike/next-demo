@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export default styled.h1`
-  color: #00b0ea;
-  margin: 0px;
-`;
+  margin: 0;
+  font-size: ${props => props.fontSize}px;
+  text-align: left;
+  color: ${props => props.color};
+`
