@@ -12,10 +12,10 @@ export default () => (
           <A>Idioma</A>
         </Link>
         <Link href="/signup">
-          <A>Registro</A>
+          <A>Login</A>
         </Link>
         <Link href="/signin">
-          <A>Login</A>
+          <A>Club de viajes</A>
         </Link>
       </Right>
     </Nav>

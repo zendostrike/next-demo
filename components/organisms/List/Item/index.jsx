@@ -12,7 +12,7 @@ import {
   P,
   Days
 } from "./styles";
-import { Title, Subtitle, Button } from "../../../atoms";
+import { Title, Subtitle, Button, CalendarPage } from "../../../atoms";
 
 export default ({ item }) => (
   <ItemContainer>
@@ -33,26 +33,22 @@ export default ({ item }) => (
       </p>
     </Stock>
     <Dates>
-      <div style={{ marginRight: "20px" }}>
+      <div style={{ padding: "0px 25px 0px 25px" }}>
         <Subtitle text="Salida" />
-        <p style={{ fontSize: "42px", textAlign: "center", fontWeight: 600 }}>
-          5
-        </p>
+        <CalendarPage />
       </div>
-      <div>
+      <div style={{ padding: "0px 25px 0px 25px" }}>
         <Subtitle text="Retorno" />
-        <p style={{ fontSize: "42px", textAlign: "center", fontWeight: 600 }}>
-          5
-        </p>
+        <CalendarPage />
       </div>
     </Dates>
     <Prices>
-      <div style={{ margin: 0, padding: "35px 0px" }}>
-        <Subtitle text="ANTES" color="#d0d1d3" fontSize="20" />
+      <div style={{ margin: 0, padding: "40px 0px" }}>
+        <Subtitle text="ANTES" color="#d0d1d3" fontSize="16" />
         <p
           style={{
             margin: 0,
-            fontSize: "38px",
+            fontSize: "34px",
             textAlign: "center",
             fontWeight: 600,
             color: "#d0d1d3",
