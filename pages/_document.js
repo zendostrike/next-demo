@@ -13,17 +13,15 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html
-        style={{
-          fontFamily:
-            "Avenir Next, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"
-        }}
-      >
+      <html>
         <Head>
-          <title>My page</title>
           {this.props.styleTags}
+          <link
+            href="https://fonts.googleapis.com/css?family=Lato"
+            rel="stylesheet"
+          />
         </Head>
-        <body style={{ margin: 0 }}>
+        <body style={{ margin: 0, fontFamily: "Lato" }}>
           <Main />
           <NextScript />
         </body>
