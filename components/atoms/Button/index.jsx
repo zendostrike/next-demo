@@ -1,3 +1,3 @@
 import { Button } from "./styles";
 
-export default props => <Button>{props.text}</Button>;
+export default ({ text }) => <Button>{text}</Button>;

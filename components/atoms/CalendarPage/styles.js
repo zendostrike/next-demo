@@ -20,7 +20,7 @@ export const DayNumber = styled.div`
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-  background: #f1f1f1;
+  background: #f8f8f8;
   color: #1fb8f6;
 `;
 
@@ -28,6 +28,6 @@ export const Year = styled.div`
   padding: 2px;
   text-align: center;
   font-size: 12px;
-  background: #f1f1f1;
+  background: #f8f8f8;
   color: #1fb8f6;
 `;

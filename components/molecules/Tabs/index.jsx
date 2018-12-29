@@ -1,9 +1,5 @@
-import Tabs from './styles'
+import TabsContainer from "./styles";
 
-const TabsComponent = ({ children }) => (
-  <Tabs>
-    {children}
-  </Tabs>
-)
+const Tabs = ({ children }) => <TabsContainer>{children}</TabsContainer>;
 
-export default TabsComponent
+export default Tabs;
