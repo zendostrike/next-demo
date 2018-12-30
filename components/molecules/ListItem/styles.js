@@ -17,7 +17,7 @@ const Avatar = styled.div`
   background-size: cover;
   position: relative;
   cursor: pointer;
-  margin: 0;
+  margin-right: 15px;
   height: 145px;
   width: 145px;
 `;

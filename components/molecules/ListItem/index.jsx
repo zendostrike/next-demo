@@ -18,16 +18,18 @@ import { Title, Subtitle, Button, CalendarPage } from "../../atoms";
 
 export default ({ item }) => (
   <ItemContainer>
-    <Avatar backgroundImage={item.image} />
-    <Info>
-      <Title text={item.arrivalCity} />
-      <div style={{ marginTop: "25px", width: "80%" }}>
-        <Small>{"Paquete"}</Small>
-        <HR />
-        <P>{item.packageName}</P>
-        <Days>{item.days}</Days>
-      </div>
-    </Info>
+    <div style={{ display: "flex" }}>
+      <Avatar backgroundImage={item.image} />
+      <Info>
+        <Title text={item.arrivalCity} />
+        <div style={{ marginTop: "25px", width: "80%" }}>
+          <Small>{"Paquete"}</Small>
+          <HR />
+          <P>{item.packageName}</P>
+          <Days>{item.days}</Days>
+        </div>
+      </Info>
+    </div>
     <Stock>
       <Subtitle text="Cupos" fontSize={16} />
       <p
