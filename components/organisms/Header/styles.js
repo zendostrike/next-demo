@@ -4,9 +4,9 @@ const Header = styled.header`
   padding: 20px 0;
   color: #00b0ea;
   grid-area: header;
-  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  box-shadow: 0px 21px 37px -7px rgba(211, 224, 240, 1);
 `;
 
 const Nav = styled.nav`
@@ -16,6 +16,7 @@ const Nav = styled.nav`
 `;
 
 const Left = styled.div`
+  padding-left: 84px;
   grid-area: left;
 `;
 
@@ -23,6 +24,7 @@ const Right = styled.div`
   grid-area: right;
   text-align: right;
   padding-top: 13px;
+  padding-right: 84px;
 `;
 
 const A = styled.a`

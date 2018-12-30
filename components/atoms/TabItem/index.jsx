@@ -1,9 +1,9 @@
-import TabItem from './styles'
+import TabItem from "./styles";
 
-const TabItemComponent = ({ text }) => (
-  <TabItem>
+const TabItemComponent = ({ text, isActive, onClick }) => (
+  <TabItem onClick={onClick} isActive={isActive}>
     {text}
   </TabItem>
-)
+);
 
-export default TabItemComponent
+export default TabItemComponent;

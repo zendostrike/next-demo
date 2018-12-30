@@ -6,11 +6,12 @@ import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
 import "../pages/react_dates_overrides.css";
 
-import { Card } from "../components/organisms";
+import { Card, Header } from "../components/organisms";
 import { CalendarPage, Button, TabItem } from "../components/atoms";
 
 import "./styles.css";
 import imageFile from "../static/images/slide_1.jpg";
+import logo from "../static/images/logo.png";
 import ListItem from "../components/molecules/ListItem";
 import SearchBar from "../components/organisms/SearchBar";
 import Tabs from "../components/molecules/Tabs";
@@ -62,3 +63,7 @@ storiesOf("Card", module)
 storiesOf("SearchBar", module)
   .addDecorator(bg)
   .add("with text", () => <SearchBar />);
+
+storiesOf("Header", module)
+  .addDecorator(bg)
+  .add("with text", () => <Header logo={logo} />);

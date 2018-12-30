@@ -1,25 +1,25 @@
-import Link from 'next/link'
-import { Header, Nav, Left, Right, A } from './styles'
+import Link from "next/link";
+import { Header, Nav, Left, Right, A } from "./styles";
 
-export default () => (
+export default ({ logo }) => (
   <Header>
     <Nav>
-      <Link href='/'>
+      <Link href="/">
         <Left>
-          <img src='/static/images/logo.png' height='50' alt='mundipack_logo' />
+          <img src={logo} height="50" alt="mundipack_logo" />
         </Left>
       </Link>
       <Right>
-        <Link href='/'>
+        <Link href="/">
           <A>Idioma</A>
         </Link>
-        <Link href='/signup'>
+        <Link href="/signup">
           <A>Login</A>
         </Link>
-        <Link href='/signin'>
+        <Link href="/signin">
           <A>Club de viajes</A>
         </Link>
       </Right>
     </Nav>
   </Header>
-)
+);

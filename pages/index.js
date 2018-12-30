@@ -1,6 +1,5 @@
 import DefaultTemplate from "../components/templates/default";
 import Subtitle from "../components/Subtitle";
-import SearchBar from "../components/SearchBar";
 import Slider from "../components/slider";
 import Grid from "../components/Grid";
 import { Card } from "../components/organisms";
@@ -9,6 +8,7 @@ import { Section } from "../components/styles";
 import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
 import "./react_dates_overrides.css";
+import { SearchBar } from "../components/organisms";
 
 const images = ["/static/images/slide_1.jpg", "/static/images/slide_2.png"];
 
