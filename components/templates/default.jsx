@@ -16,7 +16,7 @@ const Main = styled.div`
   grid-area: main;
 `;
 
-export default ({ children, title = "This is the default title" }) => (
+export default ({ children, title = "Mundipack" }) => (
   <Frame>
     <Head>
       <title>{title}</title>

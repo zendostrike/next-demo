@@ -102,6 +102,8 @@ class SingleDatePickerWrapper extends React.Component {
     // props on the SingleDatePicker itself and thus, have to be omitted.
     const props = omit(this.props, ["autoFocus", "initialDate"]);
 
+    moment.locale("es");
+
     return (
       <SingleDatePicker
         {...props}

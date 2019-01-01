@@ -28,16 +28,27 @@ is not yet selected. Edits the dates between your mouse and said date */
 
 .DateInput {
   /* box-shadow: 0px 2px 3px 0px rgba(102, 102, 102, 0.61); */
+  border-bottom: 1px solid #00b0ea;
+  color: #00b0ea;
 }
 
 .DateInput_input {
   font-size: 0.9em;
-  height: 32px;
+  height: 31px;
   width: 100px;
-  color: hsl(0, 0%, 50%);
   border-style: none;
+  color: #00b0ea;
+  font-size: 16px;
+  font-family: "Lato";
+  padding: 10px;
 }
 
 .SingleDatePickerInput {
   border-radius: 0px;
+  color: #00b0ea;
+  border-style: none;
+}
+
+.DateInput_input::placeholder {
+  color: #00b0ea;
 }
