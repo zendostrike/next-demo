@@ -5,7 +5,8 @@
     "sfix": "standard --fix",
     "dev": "next",
     "build": "next build",
-    "start": "next build && next start",
+    "start": "next start",
+    "heroku-postbuild": "next build",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
