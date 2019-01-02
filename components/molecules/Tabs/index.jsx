@@ -9,10 +9,12 @@ export default class Parent extends React.Component {
   }
 
   render() {
+    const { dark } = this.props;
     const children = React.Children.map(this.props.children, (child, index) => {
       return React.cloneElement(child, {
         index,
         isActive: index === this.state.activeIndex,
+        isDark: dark,
         onClick: () => this.setState({ activeIndex: index })
       });
     });

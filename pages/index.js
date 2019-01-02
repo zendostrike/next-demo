@@ -2,13 +2,14 @@ import DefaultTemplate from "../components/templates/default";
 import Subtitle from "../components/Subtitle";
 import Slider from "../components/slider";
 import Grid from "../components/Grid";
-import { Card } from "../components/organisms";
+import { Card, SearchBar } from "../components/organisms";
 import { Section } from "../components/styles";
+import { Tabs } from "../components/molecules";
+import { TabItem } from "../components/atoms";
 
 import "react-dates/initialize";
 import "react-dates/lib/css/_datepicker.css";
 import "./react_dates_overrides.css";
-import { SearchBar } from "../components/organisms";
 
 const images = ["/static/images/slide_1.jpg", "/static/images/slide_2.png"];
 
@@ -32,7 +33,13 @@ export default () => (
     </Section>
 
     <Section background="#00b0ea" dark>
-      Paquetes | Salidas Confirmadas
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Tabs dark>
+          <TabItem text="Paquetes" />
+          <TabItem text="Salidas Confirmadas" />
+        </Tabs>
+      </div>
+
       <SearchBar />
     </Section>
     <Section color="#00ca82">
