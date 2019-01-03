@@ -5,7 +5,7 @@
     "sfix": "standard --fix",
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "heroku-postbuild": "next build",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
