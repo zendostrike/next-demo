@@ -1,4 +1,4 @@
-// import Link from "next/link";
+import Link from "next/link";
 import {
   ItemContainer,
   Avatar,
@@ -87,7 +87,10 @@ export default ({ item }) => (
     </PriceNow>
     <Actions>
       <div style={{ margin: "auto", padding: "50px 0px" }}>
-        <Button text="VER DETALLE" />
+        <Link href={`/package/${item.slug}`}>
+          VER DETALLE
+          {/* <Button text="" /> */}
+        </Link>
       </div>
     </Actions>
   </ItemContainer>
