@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ItemContainer = styled.div`
-  display: flex;
+  display: grid;
   flex-direction: row;
   justify-content: space-between;
   color: #00b0ea;
@@ -9,6 +9,13 @@ const ItemContainer = styled.div`
   width: 100%;
   background: #fff;
   margin: 10px 0px;
+  grid-template-columns: 3fr repeat(6,1fr);
+  @media (max-width: 1250px) {
+    grid-template-columns: 3fr repeat(5,1fr);
+  }
+  @media (max-width: 1100px) {
+    grid-template-columns: 3fr repeat(3,1fr);
+  }
 `;
 
 const Avatar = styled.div`
@@ -26,6 +33,9 @@ const Info = styled.div`
   margin-right: 20px;
   padding: 7px 0px 0px 0px;
   text-align: left;
+  @media (max-width: 1300px) {
+    margin-right: 1em;
+  }
 `;
 
 const Stock = styled.div`
@@ -85,7 +95,10 @@ const Days = styled.p`
   font-weight: 600;
   letter-spacing: -1px;
 `;
-
+const InfoWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 2fr;  
+`;
 export {
   ItemContainer,
   Avatar,
@@ -99,5 +112,6 @@ export {
   HR,
   Small,
   P,
-  Days
+  Days,
+  InfoWrapper
 };

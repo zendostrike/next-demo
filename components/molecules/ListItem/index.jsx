@@ -12,24 +12,25 @@ import {
   HR,
   Small,
   P,
-  Days
+  Days,
+  InfoWrapper
 } from "./styles";
 import { Title, Subtitle, Button, CalendarPage } from "../../atoms";
 
 export default ({ item }) => (
   <ItemContainer>
-    <div style={{ display: "flex" }}>
+    <InfoWrapper>
       <Avatar backgroundImage={item.image} />
       <Info>
         <Title text={item.arrivalCity} />
-        <div style={{ marginTop: "25px", width: "80%" }}>
+        <div style={{ marginTop: "25px"}}>
           <Small>{"Paquete"}</Small>
           <HR />
           <P>{item.packageName}</P>
           <Days>{item.days}</Days>
         </div>
       </Info>
-    </div>
+    </InfoWrapper>
     <Stock>
       <Subtitle text="Cupos" fontSize={16} />
       <p

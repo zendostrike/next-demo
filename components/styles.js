@@ -117,6 +117,9 @@ export const Section2 = styled.div`
   position: relative;
   padding: 0px 100px;
   margin-top: ${props => props.marginTop || "100px"};
+  @media (max-width: 1250px) {
+    padding: 0px 1em;
+  }
 `;
 
 export const Select = styled.select`

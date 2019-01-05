@@ -19,7 +19,7 @@ const customStyles = {
   }),
   singleValue: () => ({
     color: "#00b0ea",
-    fontSize: "16px"
+    fontSize: "16px",
   }),
   dropdownIndicator: () => ({
     padding: "14px 20px",
