@@ -13,7 +13,7 @@ import {
 
 export default ({ item }) => (
   <CardContainer>
-    <Link href="/travels">
+    <Link href="/packages">
       <CardHeader backgroundImage={item.image} />
     </Link>
     <CardBody>

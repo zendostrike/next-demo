@@ -4,11 +4,16 @@ import { Header, Nav, Left, Right, A } from "./styles";
 export default ({ logo }) => (
   <Header>
     <Nav>
-      <Link href="/">
+      <a href="/">
         <Left>
-          <img src={logo} height="50" alt="mundipack_logo" />
+          <img
+            src={logo}
+            height="50"
+            alt="mundipack_logo"
+            style={{ cursor: "pointer" }}
+          />
         </Left>
-      </Link>
+      </a>
       <Right>
         <Link href="/">
           <A>Idioma</A>
