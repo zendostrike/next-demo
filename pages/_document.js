@@ -17,11 +17,11 @@ export default class MyDocument extends Document {
         <Head>
           {this.props.styleTags}
           <link
-            href="https://fonts.googleapis.com/css?family=Barlow"
+            href="https://fonts.googleapis.com/css?family=Lato"
             rel="stylesheet"
           />
         </Head>
-        <body style={{ margin: 0, fontFamily: "Barlow" }}>
+        <body style={{ margin: 0, fontFamily: "Lato" }}>
           <Main />
           <NextScript />
         </body>
