@@ -23,7 +23,7 @@ export default ({ item }) => (
       <Avatar backgroundImage={item.image} />
       <Info>
         <Title text={item.arrivalCity} />
-        <div style={{ marginTop: "25px"}}>
+        <div style={{ marginTop: "25px" }}>
           <Small>{"Paquete"}</Small>
           <HR />
           <P>{item.packageName}</P>
@@ -88,10 +88,10 @@ export default ({ item }) => (
     </PriceNow>
     <Actions>
       <div style={{ margin: "auto", padding: "50px 0px" }}>
-        <Link href={`/package/${item.slug}`}>
-          VER DETALLE
-          {/* <Button text="" /> */}
-        </Link>
+        {/* <Link href={`/package/${item.slug}`}>
+          VER DETALLE */}
+        <Button text="VER DETALLE" />
+        {/* </Link> */}
       </div>
     </Actions>
   </ItemContainer>
