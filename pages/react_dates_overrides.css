@@ -33,13 +33,12 @@ is not yet selected. Edits the dates between your mouse and said date */
 }
 
 .DateInput_input {
-  font-size: 0.9em;
-  height: 31px;
   border-style: none;
   color: #00b0ea;
   font-size: 16px;
   font-family: "Lato";
-  padding: 10px;
+  padding: 10px 0px;
+  height: 31px;
 }
 .DateInput{
   width: 100%;

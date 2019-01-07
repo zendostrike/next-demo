@@ -59,7 +59,6 @@ export default ({ item }) => (
         <p
           style={{
             margin: 0,
-            fontSize: "28px",
             textAlign: "center",
             fontWeight: 600,
             color: "#d0d1d3",

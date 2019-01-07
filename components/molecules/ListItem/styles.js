@@ -12,9 +12,18 @@ const ItemContainer = styled.div`
   grid-template-columns: 3fr repeat(6,1fr);
   @media (max-width: 1250px) {
     grid-template-columns: 3fr repeat(5,1fr);
+    >div:first-child{
+      grid-column: 1/4;
+    }
   }
   @media (max-width: 1100px) {
-    grid-template-columns: 3fr repeat(3,1fr);
+       
+  }
+  @media (max-width:900px) {
+    grid-template-columns: 1fr repeat(4,1fr);
+    >div:first-child{
+      grid-column: 1/5;
+    } 
   }
 `;
 
@@ -25,8 +34,6 @@ const Avatar = styled.div`
   position: relative;
   cursor: pointer;
   margin-right: 15px;
-  height: 145px;
-  width: 145px;
 `;
 
 const Info = styled.div`
@@ -56,6 +63,20 @@ const ArrivalDate = styled.div`
 const PriceBefore = styled.div`
   text-align: left;
   padding: 0px 20px;
+  p{
+    font-size: 1.8em;
+  }
+  @media (max-width: 1250px) {
+    grid-column: 4;
+  } 
+  @media (max-width: 900px) {
+    grid-column: 3;
+  }  
+  @media (max-width: 780px) {
+    p{
+      font-size: 16px;
+    }
+  }
 `;
 
 const PriceNow = styled.div`
@@ -97,7 +118,7 @@ const Days = styled.p`
 `;
 const InfoWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr;  
+  grid-template-columns: 1fr 1fr;  
 `;
 export {
   ItemContainer,
